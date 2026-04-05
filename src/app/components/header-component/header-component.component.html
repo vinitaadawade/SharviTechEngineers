@@ -1,0 +1,58 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center brand-logo" routerLink="/">
+      
+      <img 
+        src="/assets/logo.png" 
+        alt="SharviTech Engineers"
+        class="logo-img"
+      >
+
+      <span class="ms-2 fw-bold">
+        SHARVITECH
+        <span class="text-warning">ENGINEERS</span>
+      </span>
+
+    </a>
+
+    <!-- Mobile Toggle -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarMenu"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="navbarMenu">
+
+      <ul class="navbar-nav ms-4">
+
+        <li class="nav-item">
+          <a routerLink="/" routerLinkActive="active" class="nav-link">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a routerLink="/product" routerLinkActive="active" class="nav-link">Products</a>
+        </li>
+
+        <li class="nav-item">
+          <a routerLink="/about" routerLinkActive="active" class="nav-link">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a routerLink="/contact" routerLinkActive="active" class="nav-link">Contact</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</nav>

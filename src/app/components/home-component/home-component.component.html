@@ -1,0 +1,191 @@
+<!-- HERO SECTION -->
+
+<section class="hero-section">
+
+<div class="hero-overlay"></div>
+
+<div class="container hero-content">
+
+<div class="row align-items-center gy-5">
+
+<!-- Left Content -->
+<div class="col-lg-7 text-white">
+
+<p class="hero-tag">
+PROFESSIONAL MATERIAL SUPPLY
+</p>
+
+<h1 class="hero-title">
+Reliable Construction Materials <br>
+For Every Build Stage
+</h1>
+
+<p class="hero-description">
+SharviTech Engineers supplies reliable construction materials
+for residential, commercial and infrastructure projects.
+</p>
+
+<button class="btn btn-warning hero-btn">
+Quick Contact
+</button>
+
+</div>
+
+
+<!-- Right Info Card -->
+<div class="col-lg-5">
+
+<div class="info-box">
+
+<h6 class="text-warning fw-bold">
+WHY CHOOSE US
+</h6>
+
+<h4 class="fw-bold">
+Site-ready materials. Dispatch-ready team.
+</h4>
+
+<p>
+We support contractors and builders with dependable stock
+visibility and material dispatch planning.
+</p>
+
+<a href="#" class="explore-link">
+Explore Services →
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- WHY SHARVITECH -->
+
+<section class="py-5 bg-light">
+
+<div class="container">
+
+<!-- Section Title -->
+<div class="text-center mb-5">
+
+<h2 class="fw-bold section-title">
+PERFORMANCE YOU CAN DEPEND ON
+</h2>
+
+<p class="text-muted col-lg-6 mx-auto">
+Built for contractors and project managers who need timely supply and practical support.
+</p>
+
+</div>
+
+<!-- Cards -->
+<div class="row g-4">
+
+<!-- Card 1 -->
+<div class="col-12 col-md-6 col-lg-4 d-flex">
+
+<div class="card feature-card p-4 w-100 text-center">
+
+<div class="icon-box mb-3">
+<i class="bi bi-box-seam"></i>
+</div>
+
+<h5>Bulk Supply Assurance</h5>
+
+<p>
+Consistent inventory for medium and large construction projects.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- Card 2 -->
+<div class="col-12 col-md-6 col-lg-4 d-flex">
+
+<div class="card feature-card p-4 w-100 text-center">
+
+<div class="icon-box mb-3">
+<i class="bi bi-truck"></i>
+</div>
+
+<h5>Fast Delivery Turnaround</h5>
+
+<p>
+Optimized logistics network with dispatch coordination.
+</p>
+
+</div>
+
+</div>
+
+
+<!-- Card 3 -->
+<div class="col-12 col-md-6 col-lg-4 d-flex">
+
+<div class="card feature-card p-4 w-100 text-center">
+
+<div class="icon-box mb-3">
+<i class="bi bi-people"></i>
+</div>
+
+<h5>Contractor Support</h5>
+
+<p>
+Dedicated material guidance to match every project stage.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PRODUCT CATEGORIES -->
+
+<section class="py-5">
+  <div class="container">
+
+    <h2 class="fw-bold mb-4">CORE PRODUCT CATEGORIES</h2>
+
+    <div class="row">
+
+      <div class="col-12 col-md-6 col-lg-4 d-flex"
+           *ngFor="let p of products">
+
+        <div class="card product-card w-100">
+
+          <div class="img-wrapper">
+            <img [src]="p.image" alt="{{p.name}}">
+          </div>
+
+          <div class="card-body text-center">
+            <h5>{{p.name}}</h5>
+
+            <button class="btn btn-warning"
+                    (click)="openCategory(p.name)">
+              View Materials →
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,62 @@
+<section class="container py-5">
+
+  <div class="section-title text-center">
+
+  <h1 class="product-title">
+    CONSTRUCTION MATERIAL CATALOG
+  </h1>
+
+  <div class="title-line"></div>
+
+</div>
+
+  <!-- 🔥 TABS -->
+  <div class="tabs-container mb-4">
+
+    <button 
+      *ngFor="let c of getAllCategories()"
+      class="btn"
+      [ngClass]="{
+        'btn-warning': activeCategory === c,
+        'btn-outline-secondary': activeCategory !== c
+      }"
+      (click)="selectCategory(c)">
+      
+      {{c}}
+    </button>
+
+  </div>
+
+  <!-- 🔥 SUBCATEGORY CARDS -->
+  <div class="row g-4">
+
+    <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3"
+         *ngFor="let s of getSubCategories()">
+
+      <div class="card product-card h-100">
+
+        <!-- IMAGE -->
+        <div class="img-wrapper">
+          <img [src]="s.image" alt="{{s.name}}">
+        </div>
+
+        <!-- CONTENT -->
+        <div class="card-body">
+
+          <small class="text-muted">
+            {{ getCategoryName(s.name) }}
+          </small>
+
+          <h5 class="mt-2">{{s.name}}</h5>
+
+          <p>{{s.desc}}</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
