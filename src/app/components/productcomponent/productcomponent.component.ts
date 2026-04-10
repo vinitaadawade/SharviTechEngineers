@@ -37,7 +37,10 @@ ngOnInit() {
     sub: [
       { name: 'Cables', desc: 'Power & control cables', image: 'assets/products/cables.jpg' },
       { name: 'Glands', desc: 'Cable protection fittings', image: 'assets/products/glands.jpg' },
-      { name: 'Terminals', desc: 'Electrical connectors', image: 'assets/products/terminals.jpg' }
+      { name: 'Terminals', desc: 'Electrical connectors', image: 'assets/products/terminals.jpg' },
+      { name: 'Conduit', desc: 'Non-metallic, corrosion-resistant, and ideal for wet or underground locations.', image: 'assets/products/Conduit.jpg' },
+      { name: 'RaceWays', desc: 'enclosed channels—metallic or non-metallic—designed to house, organize, and protect electrical wiring and data cables.', image: 'assets/products/raceway.png' },
+      { name: 'Cable Tray', desc: 'Essential in industrial plants, data centers, and commercial buildings', image: 'assets/products/cableTray.jpg' }
     ]
   },
   {
@@ -61,10 +64,7 @@ ngOnInit() {
     name: 'Insulation Materials',
     sub: [
       { name: 'Pipe Insulation', desc: 'Thermal pipe covering', image: 'assets/products/pipe.jpg' },
-      { name: 'Thermal Insulation', desc: 'Heat resistant material', image: 'assets/products/thermal.jpg' },
-      { name: 'Conduit', desc: 'Non-metallic, corrosion-resistant, and ideal for wet or underground locations.', image: 'assets/products/Conduit.jpg' },
-      { name: 'RaceWays', desc: 'enclosed channels—metallic or non-metallic—designed to house, organize, and protect electrical wiring and data cables.', image: 'assets/products/raceway.png' },
-      { name: 'Cable Tray', desc: 'Essential in industrial plants, data centers, and commercial buildings', image: 'assets/products/cableTray.jpg' }
+      { name: 'Thermal Insulation', desc: 'Heat resistant material', image: 'assets/products/thermal.jpg' }
     ]
   },
   {
